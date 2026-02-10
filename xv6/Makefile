@@ -54,6 +54,7 @@ endif
 # QEMU = qemu-system-i386
 
 # Try to infer the correct QEMU
+QEMU = /usr/libexec/qemu-kvm
 ifndef QEMU
 QEMU = $(shell if which qemu > /dev/null; \
 	then echo qemu; exit; \
